@@ -1,0 +1,9 @@
+name: brave-search
+slug: brave-search
+description: Web search via Brave Search API
+clawhub_url: https://clawhub.ai/skills/brave-search
+tags:
+  - search
+  - research
+requires_api_key: true
+submitted_at: "2026-02-28T10:00:00Z"

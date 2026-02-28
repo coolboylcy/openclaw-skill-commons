@@ -1,0 +1,11 @@
+name: weather
+slug: weather
+description: Get current weather and forecasts (no API key required)
+clawhub_url: https://clawhub.ai/skills/weather
+github_url: https://github.com/openclaw/skills/tree/main/skills/steipete/weather
+tags:
+  - productivity
+  - no-api-key
+  - search
+requires_api_key: false
+submitted_at: "2026-02-28T10:00:00Z"

@@ -1,0 +1,32 @@
+name: Update Leaderboard
+
+on:
+  push:
+    paths:
+      - 'votes/**'
+  workflow_dispatch:
+
+jobs:
+  update-leaderboard:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Calculate leaderboard
+        run: python3 scripts/calculate_leaderboard.py
+
+      - name: Commit leaderboard
+        run: |
+          git config user.name "openclaw-bot"
+          git config user.email "bot@openclaw-skill-commons"
+          git add leaderboard.json
+          git diff --staged --quiet || git commit -m "chore: update leaderboard [skip ci]"
+          git push
