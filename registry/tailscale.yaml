@@ -1,6 +1,6 @@
 name: tailscale
 slug: tailscale
-description: (auto-registered — description pending)
+description: Manage Tailscale mesh VPN network via CLI and API.
 clawhub_url: https://clawhub.ai/skills/tailscale
 tags:
   - devops

@@ -1,6 +1,6 @@
 name: auto-pr-merger
 slug: auto-pr-merger
-description: (auto-registered — description pending)
+description: Automated workflow to check and merge GitHub pull requests.
 clawhub_url: https://clawhub.ai/skills/auto-pr-merger
 tags:
   - git

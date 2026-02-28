@@ -1,6 +1,6 @@
 name: coding-agent
 slug: coding-agent
-description: (auto-registered — description pending)
+description: Run Codex CLI, Claude Code, or other coding agents via background process.
 clawhub_url: https://clawhub.ai/skills/coding-agent
 tags:
   - coding

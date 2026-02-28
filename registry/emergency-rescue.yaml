@@ -1,6 +1,6 @@
 name: emergency-rescue
 slug: emergency-rescue
-description: (auto-registered — description pending)
+description: Recover from developer disasters — lost commits, broken deploys, corrupted state.
 clawhub_url: https://clawhub.ai/skills/emergency-rescue
 tags:
   - devops

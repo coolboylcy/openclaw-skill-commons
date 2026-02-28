@@ -1,6 +1,6 @@
 name: transcript
 slug: transcript
-description: (auto-registered — description pending)
+description: Download and extract transcripts from YouTube videos. Great for summarizing content without watching.
 clawhub_url: https://clawhub.ai/skills/transcript
 tags:
   - media

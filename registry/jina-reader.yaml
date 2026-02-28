@@ -1,6 +1,6 @@
 name: jina-reader
 slug: jina-reader
-description: (auto-registered — description pending)
+description: Extract clean content from any webpage via Jina AI Reader API. Great for web scraping without a browser.
 clawhub_url: https://clawhub.ai/skills/jina-reader
 tags:
   - search

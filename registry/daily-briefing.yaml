@@ -1,6 +1,6 @@
 name: daily-briefing
 slug: daily-briefing
-description: (auto-registered — description pending)
+description: Generate a warm, concise daily briefing. Summarizes what needs attention.
 clawhub_url: https://clawhub.ai/skills/daily-briefing
 tags:
   - productivity

@@ -1,6 +1,6 @@
 name: project-context-sync
 slug: project-context-sync
-description: (auto-registered — description pending)
+description: Keep project status documents updated automatically as work progresses.
 clawhub_url: https://clawhub.ai/skills/project-context-sync
 tags:
   - productivity

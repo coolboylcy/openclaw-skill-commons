@@ -1,6 +1,6 @@
 name: vector-memory
 slug: vector-memory
-description: (auto-registered — description pending)
+description: Intelligent memory search with automatic vector embedding fallback.
 clawhub_url: https://clawhub.ai/skills/vector-memory
 tags:
   - ai

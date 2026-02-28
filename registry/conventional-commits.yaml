@@ -1,6 +1,6 @@
 name: conventional-commits
 slug: conventional-commits
-description: (auto-registered — description pending)
+description: Format commit messages using the Conventional Commits specification.
 clawhub_url: https://clawhub.ai/skills/conventional-commits
 tags:
   - git

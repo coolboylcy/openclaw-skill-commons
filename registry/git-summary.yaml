@@ -1,6 +1,6 @@
 name: git-summary
 slug: git-summary
-description: (auto-registered — description pending)
+description: Get a quick summary of the current Git repository — recent commits, branches, status.
 clawhub_url: https://clawhub.ai/skills/git-summary
 tags:
   - git

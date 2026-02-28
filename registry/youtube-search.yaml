@@ -1,6 +1,6 @@
 name: youtube-search
 slug: youtube-search
-description: (auto-registered — description pending)
+description: Search YouTube videos and channels. Returns titles, views, descriptions.
 clawhub_url: https://clawhub.ai/skills/youtube-search
 tags:
   - search

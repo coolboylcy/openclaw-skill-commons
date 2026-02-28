@@ -1,6 +1,6 @@
 name: agent-memory
 slug: agent-memory
-description: (auto-registered — description pending)
+description: Persistent memory system for AI agents — store and retrieve context across sessions.
 clawhub_url: https://clawhub.ai/skills/agent-memory
 tags:
   - ai

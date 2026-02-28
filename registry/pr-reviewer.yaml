@@ -1,6 +1,6 @@
 name: pr-reviewer
 slug: pr-reviewer
-description: (auto-registered — description pending)
+description: Automated GitHub PR code review — analyzes diff and leaves structured comments.
 clawhub_url: https://clawhub.ai/skills/pr-reviewer
 tags:
   - git

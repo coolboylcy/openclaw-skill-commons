@@ -1,6 +1,6 @@
 name: youtube-data
 slug: youtube-data
-description: (auto-registered — description pending)
+description: Get YouTube video metadata, transcripts, and channel data via YouTube Data API.
 clawhub_url: https://clawhub.ai/skills/youtube-data
 tags:
   - search

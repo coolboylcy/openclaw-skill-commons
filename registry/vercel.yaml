@@ -1,6 +1,6 @@
 name: vercel
 slug: vercel
-description: (auto-registered — description pending)
+description: Deploy applications and manage Vercel projects via CLI and API.
 clawhub_url: https://clawhub.ai/skills/vercel
 tags:
   - devops

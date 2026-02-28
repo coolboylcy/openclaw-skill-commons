@@ -1,6 +1,6 @@
 name: github
 slug: github
-description: (auto-registered — description pending)
+description: Interact with GitHub via gh CLI — issues, PRs, repos, gists.
 clawhub_url: https://clawhub.ai/skills/github
 tags:
   - git

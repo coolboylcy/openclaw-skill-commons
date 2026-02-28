@@ -1,6 +1,6 @@
 name: serper
 slug: serper
-description: (auto-registered — description pending)
+description: Google Search results via Serper API. Fast, accurate, structured JSON output.
 clawhub_url: https://clawhub.ai/skills/serper
 tags:
   - search

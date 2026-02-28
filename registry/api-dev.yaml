@@ -1,6 +1,6 @@
 name: api-dev
 slug: api-dev
-description: (auto-registered — description pending)
+description: Scaffold, test, document, and debug REST and GraphQL APIs.
 clawhub_url: https://clawhub.ai/skills/api-dev
 tags:
   - coding

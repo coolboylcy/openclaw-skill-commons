@@ -1,6 +1,6 @@
 name: git-workflows
 slug: git-workflows
-description: (auto-registered — description pending)
+description: Advanced git operations — cherry-pick, bisect, stash, worktrees.
 clawhub_url: https://clawhub.ai/skills/git-workflows
 tags:
   - git

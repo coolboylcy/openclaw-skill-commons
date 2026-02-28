@@ -1,6 +1,6 @@
 name: ddg-search
 slug: ddg-search
-description: (auto-registered — description pending)
+description: Web search using DuckDuckGo. No API key required, great for quick lookups.
 clawhub_url: https://clawhub.ai/skills/ddg-search
 tags:
   - search

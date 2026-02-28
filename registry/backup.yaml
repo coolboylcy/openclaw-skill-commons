@@ -1,6 +1,6 @@
 name: backup
 slug: backup
-description: (auto-registered — description pending)
+description: Backup and restore OpenClaw configurations, skills, and workspace settings.
 clawhub_url: https://clawhub.ai/skills/backup
 tags:
   - devops

@@ -1,6 +1,6 @@
 name: pm2
 slug: pm2
-description: (auto-registered — description pending)
+description: Manage Node.js applications with PM2 process manager. Keep services alive.
 clawhub_url: https://clawhub.ai/skills/pm2
 tags:
   - devops

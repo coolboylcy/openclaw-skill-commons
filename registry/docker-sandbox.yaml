@@ -1,6 +1,6 @@
 name: docker-sandbox
 slug: docker-sandbox
-description: (auto-registered — description pending)
+description: Create and manage Docker sandbox VM environments for safe code execution.
 clawhub_url: https://clawhub.ai/skills/docker-sandbox
 tags:
   - devops

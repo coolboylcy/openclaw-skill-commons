@@ -1,6 +1,6 @@
 name: daily-stoic
 slug: daily-stoic
-description: (auto-registered — description pending)
+description: Receive a daily Stoic philosophy quote and reflection. No API key required.
 clawhub_url: https://clawhub.ai/skills/daily-stoic
 tags:
   - productivity

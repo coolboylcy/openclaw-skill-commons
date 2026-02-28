@@ -1,6 +1,6 @@
 name: google-sheet
 slug: google-sheet
-description: (auto-registered — description pending)
+description: Read and write Google Sheets data. Useful for structured data storage and reporting.
 clawhub_url: https://clawhub.ai/skills/google-sheet
 tags:
   - productivity

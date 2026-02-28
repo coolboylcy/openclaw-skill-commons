@@ -1,6 +1,6 @@
 name: minimax-xlsx
 slug: minimax-xlsx
-description: (auto-registered — description pending)
+description: Generate Excel (.xlsx) spreadsheets with data and formatting.
 clawhub_url: https://clawhub.ai/skills/minimax-xlsx
 tags:
   - productivity

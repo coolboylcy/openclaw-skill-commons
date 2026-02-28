@@ -1,6 +1,6 @@
 name: ssh-tunnel
 slug: ssh-tunnel
-description: (auto-registered — description pending)
+description: SSH tunneling, port forwarding, and remote access patterns. No API key required.
 clawhub_url: https://clawhub.ai/skills/ssh-tunnel
 tags:
   - devops

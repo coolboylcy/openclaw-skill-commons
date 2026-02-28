@@ -1,6 +1,6 @@
 name: todoist
 slug: todoist
-description: (auto-registered — description pending)
+description: Manage tasks and projects in Todoist via REST API.
 clawhub_url: https://clawhub.ai/skills/todoist
 tags:
   - productivity

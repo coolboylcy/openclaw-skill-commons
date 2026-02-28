@@ -1,6 +1,6 @@
 name: database-operations
 slug: database-operations
-description: (auto-registered — description pending)
+description: Design database schemas, write SQL, manage migrations.
 clawhub_url: https://clawhub.ai/skills/database-operations
 tags:
   - coding

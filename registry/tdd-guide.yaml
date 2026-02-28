@@ -1,6 +1,6 @@
 name: tdd-guide
 slug: tdd-guide
-description: (auto-registered — description pending)
+description: Test-driven development workflow — write tests first, then implementation.
 clawhub_url: https://clawhub.ai/skills/tdd-guide
 tags:
   - coding

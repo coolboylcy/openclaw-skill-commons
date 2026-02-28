@@ -1,6 +1,6 @@
 name: notion
 slug: notion
-description: (auto-registered — description pending)
+description: Read and write Notion pages and databases via API.
 clawhub_url: https://clawhub.ai/skills/notion
 tags:
   - productivity

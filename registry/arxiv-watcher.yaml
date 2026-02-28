@@ -1,6 +1,6 @@
 name: arxiv-watcher
 slug: arxiv-watcher
-description: (auto-registered — description pending)
+description: Search and summarize ArXiv research papers. Stay current on AI, CS, and science.
 clawhub_url: https://clawhub.ai/skills/arxiv-watcher
 tags:
   - research

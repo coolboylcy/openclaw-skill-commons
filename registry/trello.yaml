@@ -1,6 +1,6 @@
 name: trello
 slug: trello
-description: (auto-registered — description pending)
+description: Manage Trello boards, lists, and cards via REST API.
 clawhub_url: https://clawhub.ai/skills/trello
 tags:
   - productivity

@@ -1,6 +1,6 @@
 name: habit-tracker
 slug: habit-tracker
-description: (auto-registered — description pending)
+description: Build and track habits. Stores progress locally, no API key needed.
 clawhub_url: https://clawhub.ai/skills/habit-tracker
 tags:
   - productivity

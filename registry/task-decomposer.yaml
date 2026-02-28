@@ -1,6 +1,6 @@
 name: task-decomposer
 slug: task-decomposer
-description: (auto-registered — description pending)
+description: Break complex requests into actionable sub-tasks. No API key required.
 clawhub_url: https://clawhub.ai/skills/task-decomposer
 tags:
   - productivity

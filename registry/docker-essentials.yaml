@@ -1,6 +1,6 @@
 name: docker-essentials
 slug: docker-essentials
-description: (auto-registered — description pending)
+description: Docker commands and workflows — build, run, compose, inspect. No API key required.
 clawhub_url: https://clawhub.ai/skills/docker-essentials
 tags:
   - devops

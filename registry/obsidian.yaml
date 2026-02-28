@@ -1,6 +1,6 @@
 name: obsidian
 slug: obsidian
-description: (auto-registered — description pending)
+description: Interact with local Obsidian vaults — search, read, and write notes.
 clawhub_url: https://clawhub.ai/skills/obsidian
 tags:
   - productivity

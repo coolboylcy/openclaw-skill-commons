@@ -1,6 +1,6 @@
 name: pomodoro
 slug: pomodoro
-description: (auto-registered — description pending)
+description: Pomodoro timer with task tracking. No API key required.
 clawhub_url: https://clawhub.ai/skills/pomodoro
 tags:
   - productivity

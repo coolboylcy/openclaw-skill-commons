@@ -1,6 +1,6 @@
 name: feishu-webhook-skill
 slug: feishu-webhook-skill
-description: (auto-registered — description pending)
+description: Send Feishu (Lark) webhook messages in card format.
 clawhub_url: https://clawhub.ai/skills/feishu-webhook-skill
 tags:
   - communication

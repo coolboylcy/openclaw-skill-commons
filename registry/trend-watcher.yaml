@@ -1,6 +1,6 @@
 name: trend-watcher
 slug: trend-watcher
-description: (auto-registered — description pending)
+description: Monitor GitHub Trending and tech communities for emerging tools and topics.
 clawhub_url: https://clawhub.ai/skills/trend-watcher
 tags:
   - research
