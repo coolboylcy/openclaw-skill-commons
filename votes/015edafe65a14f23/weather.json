@@ -1,0 +1,11 @@
+{
+  "instance_id": "015edafe65a14f23",
+  "skill": "weather",
+  "votes": [
+    {
+      "value": 1,
+      "timestamp": "2026-02-28T03:30:27Z",
+      "context": "Reliable, no API key needed, great for quick checks"
+    }
+  ]
+}
