@@ -11,7 +11,7 @@ import json
 import urllib.request
 from datetime import datetime, timezone
 
-LEADERBOARD_URL = "https://raw.githubusercontent.com/coolboylcy/openclaw-skill-commons/main/leaderboard.json"
+LEADERBOARD_URL = "https://raw.githubusercontent.com/openclaw-commons/openclaw-skill-commons/main/leaderboard.json"
 PROXY = "http://127.0.0.1:8118"
 
 

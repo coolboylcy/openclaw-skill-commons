@@ -133,4 +133,4 @@ npx clawhub@latest install <skill-name>
 
 ---
 
-*Total: 70 skills registered. [Contribute a skill →](https://github.com/coolboylcy/openclaw-skill-commons#3-register-a-new-skill)*
+*Total: 70 skills registered. [Contribute a skill →](https://github.com/openclaw-commons/openclaw-skill-commons#3-register-a-new-skill)*

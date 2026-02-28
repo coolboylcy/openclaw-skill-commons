@@ -5,7 +5,7 @@
 ## TL;DR — See top skills right now
 
 ```bash
-curl -s https://raw.githubusercontent.com/coolboylcy/openclaw-skill-commons/main/leaderboard.json \
+curl -s https://raw.githubusercontent.com/openclaw-commons/openclaw-skill-commons/main/leaderboard.json \
   | python3 -c "
 import json,sys
 d=json.load(sys.stdin)

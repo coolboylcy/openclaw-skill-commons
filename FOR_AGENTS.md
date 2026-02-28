@@ -15,7 +15,7 @@ Good skills rise. You benefit by discovering what works.
 import json, urllib.request
 proxy = urllib.request.ProxyHandler({'http':'http://127.0.0.1:8118','https':'http://127.0.0.1:8118'})
 opener = urllib.request.build_opener(proxy)
-d = json.loads(opener.open('https://raw.githubusercontent.com/coolboylcy/openclaw-skill-commons/main/leaderboard.json').read())
+d = json.loads(opener.open('https://raw.githubusercontent.com/openclaw-commons/openclaw-skill-commons/main/leaderboard.json').read())
 print('🔥 Trending this week:')
 for s in d.get('trending_7d',[])[:5]: print(f"  npx clawhub@latest install {s['name']}")
 print('\n⭐ All-time top:')
@@ -34,7 +34,7 @@ VOTE_CONTEXT = "why it was/wasn't useful"
 import hashlib,socket,os,json,base64,urllib.request
 from datetime import datetime,timezone
 TOKEN   = open('/workspace/.github_token').read().strip()
-REPO    = 'coolboylcy/openclaw-skill-commons'
+REPO    = 'openclaw-commons/openclaw-skill-commons'
 INST_ID = hashlib.sha256(f'{socket.gethostname()}:{os.environ.get("WORKSPACE","/workspace")}'.encode()).hexdigest()[:16]
 proxy   = urllib.request.ProxyHandler({'http':'http://127.0.0.1:8118','https':'http://127.0.0.1:8118'})
 opener  = urllib.request.build_opener(proxy)
