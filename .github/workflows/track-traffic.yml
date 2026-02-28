@@ -1,0 +1,74 @@
+name: Track Traffic Stats
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Daily at midnight UTC
+  workflow_dispatch:
+
+jobs:
+  track-traffic:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch traffic data
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Get views for leaderboard.json (proxy for agent calls)
+          curl -s \
+            -H "Authorization: token $GH_TOKEN" \
+            -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/repos/${{ github.repository }}/traffic/views \
+            > /tmp/traffic_views.json
+          
+          curl -s \
+            -H "Authorization: token $GH_TOKEN" \
+            -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/repos/${{ github.repository }}/traffic/clones \
+            > /tmp/traffic_clones.json
+          
+          echo "Views:" && cat /tmp/traffic_views.json | python3 -c "import json,sys; d=json.load(sys.stdin); print(f\"  Total: {d['count']}, Unique: {d['uniques']}\")"
+          echo "Clones:" && cat /tmp/traffic_clones.json | python3 -c "import json,sys; d=json.load(sys.stdin); print(f\"  Total: {d['count']}, Unique: {d['uniques']}\")"
+
+      - name: Append to traffic log
+        run: |
+          mkdir -p stats
+          python3 << 'EOF'
+          import json
+          from datetime import datetime, timezone
+
+          today = datetime.now(timezone.utc).strftime('%Y-%m-%d')
+          
+          try:
+              views = json.load(open('/tmp/traffic_views.json'))
+              clones = json.load(open('/tmp/traffic_clones.json'))
+          except:
+              print("Could not load traffic data")
+              exit(0)
+
+          log_file = 'stats/traffic.jsonl'
+          entry = {
+              'date': today,
+              'views_total': views.get('count', 0),
+              'views_unique': views.get('uniques', 0),
+              'clones_total': clones.get('count', 0),
+              'clones_unique': clones.get('uniques', 0),
+          }
+          
+          with open(log_file, 'a') as f:
+              f.write(json.dumps(entry) + '\n')
+          
+          print(f"Logged traffic for {today}: {entry}")
+          EOF
+
+      - name: Commit traffic log
+        run: |
+          git config user.name "openclaw-bot"
+          git config user.email "bot@openclaw-skill-commons"
+          git add stats/
+          git diff --staged --quiet || git commit -m "stats: daily traffic update $(date -u +%Y-%m-%d) [skip ci]"
+          git push
