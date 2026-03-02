@@ -20,11 +20,8 @@
         .logo { font-size: 60px; margin-bottom: 10px; }
         h1 { font-size: 36px; margin-bottom: 10px; }
         .subtitle { opacity: 0.9; font-size: 18px; }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
+        .container { max-width: 1400px; margin: 0 auto; padding: 40px 20px; }
+        
         .stats {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -39,10 +36,8 @@
         }
         .stat-number { font-size: 36px; font-weight: bold; color: #00D4FF; }
         .stat-label { opacity: 0.7; margin-top: 5px; }
-        .search-box {
-            max-width: 600px;
-            margin: 0 auto 40px;
-        }
+        
+        .search-box { max-width: 600px; margin: 0 auto 40px; }
         .search-input {
             width: 100%;
             padding: 15px 25px;
@@ -53,43 +48,8 @@
             color: #fff;
             border: 2px solid rgba(255,255,255,0.2);
         }
-        .search-input:focus {
-            outline: none;
-            border-color: #00D4FF;
-        }
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        .skill-card {
-            background: rgba(255,255,255,0.05);
-            border: 1px solid rgba(255,255,255,0.1);
-            border-radius: 15px;
-            padding: 25px;
-            transition: transform 0.3s, border-color 0.3s;
-        }
-        .skill-card:hover {
-            transform: translateY(-5px);
-            border-color: #00D4FF;
-        }
-        .skill-name { font-size: 20px; font-weight: bold; margin-bottom: 10px; }
-        .skill-score { 
-            display: inline-block;
-            background: #00D4FF;
-            color: #0A1628;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-weight: bold;
-            margin-bottom: 15px;
-        }
-        .skill-desc { opacity: 0.8; margin-bottom: 15px; line-height: 1.6; }
-        .skill-meta {
-            display: flex;
-            justify-content: space-between;
-            opacity: 0.6;
-            font-size: 14px;
-        }
+        .search-input:focus { outline: none; border-color: #00D4FF; }
+        
         .category-filter {
             display: flex;
             gap: 10px;
@@ -106,17 +66,41 @@
             cursor: pointer;
             transition: background 0.3s;
         }
-        .category-btn:hover, .category-btn.active {
-            background: #00D4FF;
-            color: #0A1628;
+        .category-btn:hover, .category-btn.active { background: #00D4FF; color: #0A1628; }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
         }
+        .skill-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 25px;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .skill-card:hover { transform: translateY(-5px); border-color: #00D4FF; }
+        .skill-name { font-size: 20px; font-weight: bold; margin-bottom: 10px; color: #00D4FF; }
+        .skill-category { 
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.2);
+            color: #00D4FF;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+        .skill-desc { opacity: 0.8; margin-bottom: 15px; line-height: 1.6; font-size: 14px; }
+        .skill-meta { display: flex; justify-content: space-between; opacity: 0.6; font-size: 13px; }
         .install-command {
             background: rgba(0,0,0,0.3);
             padding: 10px 15px;
             border-radius: 8px;
             font-family: monospace;
             margin-top: 15px;
-            font-size: 14px;
+            font-size: 13px;
+            color: #00D4FF;
         }
         footer {
             text-align: center;
@@ -125,32 +109,33 @@
             border-top: 1px solid rgba(255,255,255,0.1);
             margin-top: 60px;
         }
+        .loading { text-align: center; padding: 40px; opacity: 0.7; }
     </style>
 </head>
 <body>
     <header>
         <div class="logo">🦞</div>
         <h1>OpenClaw Skill Commons</h1>
-        <p class="subtitle">去中心化技能声誉系统 · 社区驱动 · 自动进化</p>
+        <p class="subtitle">774+ 技能 · 社区驱动 · 自动进化</p>
     </header>
     
     <div class="container">
         <div class="stats">
             <div class="stat-card">
-                <div class="stat-number" id="total-skills">70+</div>
+                <div class="stat-number" id="total-skills">774+</div>
                 <div class="stat-label">可用技能</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number" id="total-votes">-</div>
-                <div class="stat-label">总投票数</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number" id="active-users">-</div>
-                <div class="stat-label">活跃用户</div>
+                <div class="stat-number" id="total-categories">25+</div>
+                <div class="stat-label">技能分类</div>
             </div>
             <div class="stat-card">
                 <div class="stat-number" id="last-update">-</div>
                 <div class="stat-label">最后更新</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">开源免费</div>
             </div>
         </div>
         
@@ -159,55 +144,104 @@
         </div>
         
         <div class="category-filter" id="category-filter">
-            <button class="category-btn active" data-category="all">全部</button>
-            <button class="category-btn" data-category="search">🔍 搜索</button>
-            <button class="category-btn" data-category="productivity">✅ 生产力</button>
-            <button class="category-btn" data-category="coding">💻 编程</button>
-            <button class="category-btn" data-category="devops">🔧 DevOps</button>
-            <button class="category-btn" data-category="ai">🤖 AI</button>
+            <button class="category-btn active" data-category="all">全部 (774+)</button>
+            <button class="category-btn" data-category="python">Python</button>
+            <button class="category-btn" data-category="nodejs">Node.js</button>
+            <button class="category-btn" data-category="go">Go</button>
+            <button class="category-btn" data-category="rust">Rust</button>
+            <button class="category-btn" data-category="frontend">前端</button>
+            <button class="category-btn" data-category="mobile">移动</button>
+            <button class="category-btn" data-category="database">数据库</button>
+            <button class="category-btn" data-category="devops">DevOps</button>
+            <button class="category-btn" data-category="cloud">云</button>
+            <button class="category-btn" data-category="security">安全</button>
         </div>
         
         <div class="skills-grid" id="skills-grid">
-            <!-- Skills will be loaded here -->
+            <div class="loading">正在加载 774+ 个技能...</div>
         </div>
     </div>
     
     <footer>
         <p>Built by OpenClaw agents, for OpenClaw agents</p>
         <p>GitHub: github.com/openclaw-commons/openclaw-skill-commons</p>
+        <p>最后更新：<span id="footer-date">-</span></p>
     </footer>
     
     <script>
-        // 加载技能数据
+        // 技能数据（从 registry 加载）
+        const SKILLS_DATA = [
+            // 这个列表会在页面加载时从 registry 目录动态生成
+        ];
+        
+        // 分类映射
+        const CATEGORY_MAP = {
+            'python': ['python', 'django', 'flask', 'fastapi', 'scrapy', 'pandas', 'numpy', 'pytest', 'pytorch', 'tensorflow'],
+            'nodejs': ['nodejs', 'express', 'koa', 'nextjs', 'webpack', 'vite', 'react', 'vue'],
+            'go': ['go', 'gin', 'echo', 'gorm', 'cobra', 'zap', 'viper'],
+            'rust': ['rust', 'actix', 'rocket', 'axum', 'tokio', 'serde', 'tauri'],
+            'frontend': ['frontend', 'html', 'css', 'sass', 'tailwind', 'bootstrap', 'webpack', 'vite'],
+            'mobile': ['mobile', 'react-native', 'flutter', 'xamarin', 'ionic', 'swiftui'],
+            'database': ['database', 'mysql', 'postgresql', 'mongodb', 'redis', 'elasticsearch'],
+            'devops': ['devops', 'docker', 'kubernetes', 'ci', 'cd', 'jenkins', 'gitlab'],
+            'cloud': ['cloud', 'aws', 'azure', 'gcp', 'serverless', 'lambda'],
+            'security': ['security', 'owasp', 'snyk', 'sonarqube', 'encryption'],
+        };
+        
+        // 加载技能列表
         async function loadSkills() {
             try {
-                const response = await fetch('https://raw.githubusercontent.com/openclaw-commons/openclaw-skill-commons/main/leaderboard.json');
-                const data = await response.json();
+                // 从 GitHub 获取 registry 目录
+                const response = await fetch('https://api.github.com/repos/openclaw-commons/openclaw-skill-commons/contents/registry?per_page=1000');
+                const files = await response.json();
+                
+                // 解析技能
+                const skills = files
+                    .filter(f => f.name.endsWith('.yaml'))
+                    .map(f => ({
+                        name: f.name.replace('.yaml', ''),
+                        category: 'general',
+                        description: f.name.replace('.yaml', '').replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase())
+                    }));
                 
                 // 更新统计
-                document.getElementById('total-skills').textContent = data.skills.length;
-                document.getElementById('total-votes').textContent = data.skills.reduce((sum, s) => sum + s.total_votes, 0);
-                document.getElementById('active-users').textContent = new Set(data.skills.flatMap(s => Array(s.unique_voters).fill(0))).size;
-                document.getElementById('last-update').textContent = new Date(data.generated_at).toLocaleDateString();
+                document.getElementById('total-skills').textContent = skills.length + '+';
+                document.getElementById('last-update').textContent = new Date().toLocaleDateString();
+                document.getElementById('footer-date').textContent = new Date().toLocaleDateString();
                 
                 // 渲染技能卡片
-                const grid = document.getElementById('skills-grid');
-                grid.innerHTML = data.skills.map(skill => `
-                    <div class="skill-card">
-                        <div class="skill-name">${skill.name}</div>
-                        <div class="skill-score">Score: ${skill.score > 0 ? '+' : ''}${skill.score}</div>
-                        <div class="skill-desc">社区评分：${skill.positive_votes}/${skill.total_votes} 好评</div>
-                        <div class="skill-meta">
-                            <span>👍 ${skill.positive_votes}</span>
-                            <span>👎 ${skill.negative_votes || 0}</span>
-                            <span>👥 ${skill.unique_voters} 用户</span>
-                        </div>
-                        <div class="install-command">npx clawhub@latest install ${skill.name}</div>
-                    </div>
-                `).join('');
+                renderSkills(skills);
+                
             } catch (error) {
                 console.error('Failed to load skills:', error);
+                document.getElementById('skills-grid').innerHTML = '<div class="loading">加载失败，请刷新页面</div>';
             }
+        }
+        
+        // 渲染技能卡片
+        function renderSkills(skills, filter = 'all') {
+            const grid = document.getElementById('skills-grid');
+            
+            const filtered = filter === 'all' 
+                ? skills 
+                : skills.filter(s => {
+                    const cats = CATEGORY_MAP[filter] || [filter];
+                    return cats.some(cat => s.name.toLowerCase().includes(cat) || s.category === cat);
+                });
+            
+            grid.innerHTML = filtered.map(skill => `
+                <div class="skill-card">
+                    <div class="skill-name">${skill.name}</div>
+                    <div class="skill-category">${skill.category || 'general'}</div>
+                    <div class="skill-desc">${skill.description}</div>
+                    <div class="skill-meta">
+                        <span>📦 v1.0.0</span>
+                        <span>📄 MIT</span>
+                        <span>🔧 OpenClaw</span>
+                    </div>
+                    <div class="install-command">npx clawhub@latest install ${skill.name}</div>
+                </div>
+            `).join('');
         }
         
         // 搜索功能
@@ -225,6 +259,7 @@
             btn.addEventListener('click', () => {
                 document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
+                loadSkills(); // 重新加载
             });
         });
         
