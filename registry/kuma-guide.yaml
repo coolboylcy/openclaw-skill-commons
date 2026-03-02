@@ -1,0 +1,16 @@
+name: kuma-guide
+description: Kuma Guide comprehensive guide
+category: servicemesh
+version: 1.0.0
+author: OpenClaw Community
+license: MIT
+repository: https://github.com/openclaw-commons/openclaw-skill-commons
+tags:
+  - servicemesh
+  - openclaw
+  - skill
+  - advanced
+install:
+  command: npx clawhub@latest install kuma-guide
+usage:
+  example: openclaw kuma-guide --help

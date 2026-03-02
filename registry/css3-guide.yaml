@@ -1,0 +1,16 @@
+name: css3-guide
+description: Css3 Guide comprehensive guide
+category: frontend
+version: 1.0.0
+author: OpenClaw Community
+license: MIT
+repository: https://github.com/openclaw-commons/openclaw-skill-commons
+tags:
+  - frontend
+  - openclaw
+  - skill
+  - advanced
+install:
+  command: npx clawhub@latest install css3-guide
+usage:
+  example: openclaw css3-guide --help

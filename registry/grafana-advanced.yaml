@@ -1,0 +1,16 @@
+name: grafana-advanced
+description: Grafana Advanced comprehensive guide
+category: monitoring
+version: 1.0.0
+author: OpenClaw Community
+license: MIT
+repository: https://github.com/openclaw-commons/openclaw-skill-commons
+tags:
+  - monitoring
+  - openclaw
+  - skill
+  - advanced
+install:
+  command: npx clawhub@latest install grafana-advanced
+usage:
+  example: openclaw grafana-advanced --help

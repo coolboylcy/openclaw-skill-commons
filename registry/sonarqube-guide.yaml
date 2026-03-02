@@ -1,0 +1,16 @@
+name: sonarqube-guide
+description: Sonarqube Guide comprehensive guide
+category: security
+version: 1.0.0
+author: OpenClaw Community
+license: MIT
+repository: https://github.com/openclaw-commons/openclaw-skill-commons
+tags:
+  - security
+  - openclaw
+  - skill
+  - advanced
+install:
+  command: npx clawhub@latest install sonarqube-guide
+usage:
+  example: openclaw sonarqube-guide --help

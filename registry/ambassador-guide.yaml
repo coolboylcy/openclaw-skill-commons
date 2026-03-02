@@ -1,0 +1,16 @@
+name: ambassador-guide
+description: Ambassador Guide comprehensive guide
+category: apigateway
+version: 1.0.0
+author: OpenClaw Community
+license: MIT
+repository: https://github.com/openclaw-commons/openclaw-skill-commons
+tags:
+  - apigateway
+  - openclaw
+  - skill
+  - advanced
+install:
+  command: npx clawhub@latest install ambassador-guide
+usage:
+  example: openclaw ambassador-guide --help

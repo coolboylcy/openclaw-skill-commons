@@ -1,0 +1,16 @@
+name: nats-advanced
+description: Nats Advanced comprehensive guide
+category: messaging
+version: 1.0.0
+author: OpenClaw Community
+license: MIT
+repository: https://github.com/openclaw-commons/openclaw-skill-commons
+tags:
+  - messaging
+  - openclaw
+  - skill
+  - advanced
+install:
+  command: npx clawhub@latest install nats-advanced
+usage:
+  example: openclaw nats-advanced --help

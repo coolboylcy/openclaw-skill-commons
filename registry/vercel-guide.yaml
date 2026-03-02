@@ -1,0 +1,16 @@
+name: vercel-guide
+description: Vercel Guide comprehensive guide
+category: serverless
+version: 1.0.0
+author: OpenClaw Community
+license: MIT
+repository: https://github.com/openclaw-commons/openclaw-skill-commons
+tags:
+  - serverless
+  - openclaw
+  - skill
+  - advanced
+install:
+  command: npx clawhub@latest install vercel-guide
+usage:
+  example: openclaw vercel-guide --help

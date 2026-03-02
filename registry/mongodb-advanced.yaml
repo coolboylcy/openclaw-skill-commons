@@ -1,0 +1,16 @@
+name: mongodb-advanced
+description: Mongodb Advanced comprehensive guide
+category: database
+version: 1.0.0
+author: OpenClaw Community
+license: MIT
+repository: https://github.com/openclaw-commons/openclaw-skill-commons
+tags:
+  - database
+  - openclaw
+  - skill
+  - advanced
+install:
+  command: npx clawhub@latest install mongodb-advanced
+usage:
+  example: openclaw mongodb-advanced --help

@@ -1,0 +1,16 @@
+name: fedramp-guide
+description: Fedramp Guide comprehensive guide
+category: infrastructure
+version: 1.0.0
+author: OpenClaw Community
+license: MIT
+repository: https://github.com/openclaw-commons/openclaw-skill-commons
+tags:
+  - infrastructure
+  - openclaw
+  - skill
+  - advanced
+install:
+  command: npx clawhub@latest install fedramp-guide
+usage:
+  example: openclaw fedramp-guide --help

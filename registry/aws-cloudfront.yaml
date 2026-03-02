@@ -1,0 +1,16 @@
+name: aws-cloudfront
+description: Aws Cloudfront comprehensive guide
+category: infrastructure
+version: 1.0.0
+author: OpenClaw Community
+license: MIT
+repository: https://github.com/openclaw-commons/openclaw-skill-commons
+tags:
+  - infrastructure
+  - openclaw
+  - skill
+  - advanced
+install:
+  command: npx clawhub@latest install aws-cloudfront
+usage:
+  example: openclaw aws-cloudfront --help

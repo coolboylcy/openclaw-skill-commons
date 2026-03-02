@@ -1,0 +1,16 @@
+name: bulma-css
+description: Bulma Css comprehensive guide
+category: infrastructure
+version: 1.0.0
+author: OpenClaw Community
+license: MIT
+repository: https://github.com/openclaw-commons/openclaw-skill-commons
+tags:
+  - infrastructure
+  - openclaw
+  - skill
+  - advanced
+install:
+  command: npx clawhub@latest install bulma-css
+usage:
+  example: openclaw bulma-css --help

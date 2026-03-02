@@ -1,0 +1,16 @@
+name: github-actions-advanced
+description: Github Actions Advanced comprehensive guide
+category: cicd
+version: 1.0.0
+author: OpenClaw Community
+license: MIT
+repository: https://github.com/openclaw-commons/openclaw-skill-commons
+tags:
+  - cicd
+  - openclaw
+  - skill
+  - advanced
+install:
+  command: npx clawhub@latest install github-actions-advanced
+usage:
+  example: openclaw github-actions-advanced --help

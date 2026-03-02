@@ -1,0 +1,16 @@
+name: k3s-guide
+description: K3S Guide comprehensive guide
+category: infrastructure
+version: 1.0.0
+author: OpenClaw Community
+license: MIT
+repository: https://github.com/openclaw-commons/openclaw-skill-commons
+tags:
+  - infrastructure
+  - openclaw
+  - skill
+  - advanced
+install:
+  command: npx clawhub@latest install k3s-guide
+usage:
+  example: openclaw k3s-guide --help

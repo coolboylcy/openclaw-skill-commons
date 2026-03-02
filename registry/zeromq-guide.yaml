@@ -1,0 +1,16 @@
+name: zeromq-guide
+description: Zeromq Guide comprehensive guide
+category: messaging
+version: 1.0.0
+author: OpenClaw Community
+license: MIT
+repository: https://github.com/openclaw-commons/openclaw-skill-commons
+tags:
+  - messaging
+  - openclaw
+  - skill
+  - advanced
+install:
+  command: npx clawhub@latest install zeromq-guide
+usage:
+  example: openclaw zeromq-guide --help

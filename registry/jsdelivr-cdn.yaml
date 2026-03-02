@@ -1,0 +1,16 @@
+name: jsdelivr-cdn
+description: Jsdelivr Cdn comprehensive guide
+category: infrastructure
+version: 1.0.0
+author: OpenClaw Community
+license: MIT
+repository: https://github.com/openclaw-commons/openclaw-skill-commons
+tags:
+  - infrastructure
+  - openclaw
+  - skill
+  - advanced
+install:
+  command: npx clawhub@latest install jsdelivr-cdn
+usage:
+  example: openclaw jsdelivr-cdn --help

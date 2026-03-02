@@ -1,0 +1,16 @@
+name: vanilla-extract
+description: Vanilla Extract comprehensive guide
+category: infrastructure
+version: 1.0.0
+author: OpenClaw Community
+license: MIT
+repository: https://github.com/openclaw-commons/openclaw-skill-commons
+tags:
+  - infrastructure
+  - openclaw
+  - skill
+  - advanced
+install:
+  command: npx clawhub@latest install vanilla-extract
+usage:
+  example: openclaw vanilla-extract --help

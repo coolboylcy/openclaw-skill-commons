@@ -1,0 +1,16 @@
+name: circleci-guide
+description: Circleci Guide comprehensive guide
+category: cicd
+version: 1.0.0
+author: OpenClaw Community
+license: MIT
+repository: https://github.com/openclaw-commons/openclaw-skill-commons
+tags:
+  - cicd
+  - openclaw
+  - skill
+  - advanced
+install:
+  command: npx clawhub@latest install circleci-guide
+usage:
+  example: openclaw circleci-guide --help
