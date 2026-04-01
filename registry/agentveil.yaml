@@ -1,0 +1,12 @@
+name: agentveil
+slug: agentveil
+description: Trust scoring and reputation for AI agents — check trust scores before delegating work or installing skills
+clawhub_url: https://clawhub.ai/skills/agentveil
+github_url: https://github.com/creatorrmode-lead/avp-sdk
+tags:
+  - security
+  - trust
+  - reputation
+  - agents
+requires_api_key: false
+submitted_at: "2026-04-01T17:00:00Z"
